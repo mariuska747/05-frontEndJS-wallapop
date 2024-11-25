@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+  </head>
+  <body>
+    <div class="container">
+   
+        <h1>Nuevo Producto</h1>
+    
+        <form>           
+            
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" name="name">
+            
+            <label for="tweet-content">Descripción</label>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+              maxlength="200"
+              required
+            ></textarea>
+            
+            <label for="price" class="form-label">Precio</label>
+            <input type="text" name="price">
+    
+            <div>
+                <p>Selecciona una opcion</p>
+                <label>
+                    <input type="radio" name="option" value="buy"> compra
+                </label><br>
+                <label>
+                    <input type="radio" name="option" value="sale"> venta
+                </label><br>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    
+    </div>
+    
+
+    <script type="module" src="./create-tweet.js"></script>
+  </body>
+</html>

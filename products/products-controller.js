@@ -25,16 +25,7 @@ export async function productsController(productHmlElement){
             const products = await getProducts();
             drawProducts(products, productHmlElement)
         } catch (error) {
-            //alert(error.message)
-            
-          /*   const customErrorEvent = new CustomEvent("loading-products-error", {
-                detail: {
-                    message:error.message,
-                    type: "error"
-                }
-            }) */
-            customErrorEvent("loading-products-error", error, productHmlElement);
-            
+            customErrorEvent("loading-products-error", error, productHmlElement);           
         }finally{
             toggleElement(spinner,'hidden')
         }    
