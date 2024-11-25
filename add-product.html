@@ -14,7 +14,7 @@
         <form>           
             
             <label for="name" class="form-label">Nombre</label>
-            <input type="text" name="name">
+            <input type="text" name="name" id="name">
             
             <label for="tweet-content">Descripción</label>
             <textarea
@@ -27,15 +27,15 @@
             ></textarea>
             
             <label for="price" class="form-label">Precio</label>
-            <input type="text" name="price">
+            <input type="text" name="price" id="price">
     
             <div>
                 <p>Selecciona una opcion</p>
                 <label>
-                    <input type="radio" name="option" value="buy"> compra
+                    <input type="radio" name="option" value="compra"> compra
                 </label><br>
                 <label>
-                    <input type="radio" name="option" value="sale"> venta
+                    <input type="radio" name="option" value="venta"> venta
                 </label><br>
             </div>
     
@@ -45,6 +45,6 @@
     </div>
     
 
-    <script type="module" src="./create-tweet.js"></script>
+    <script type="module" src="./add-product.js"></script>
   </body>
 </html>

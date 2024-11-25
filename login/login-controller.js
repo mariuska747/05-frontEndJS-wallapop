@@ -34,5 +34,6 @@ async function handleLoginUser(userEmail, password) {
   const token = await loginUser(userEmail, password);
 
   localStorage.setItem("jwt", token);
+  alert("Login correcto")
   window.location.href = "/"
 }

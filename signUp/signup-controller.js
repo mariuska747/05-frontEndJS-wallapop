@@ -48,6 +48,7 @@ async function handleCreateUser(userEmail, password) {
     // consumir sparrest para crear el usuario
     try {
       await createUser(userEmail, password)
+      alert("Usuario creado")
       window.location.href = "/";
     } catch (error) {
       alert(error.message)
