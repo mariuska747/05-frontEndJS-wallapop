@@ -1,16 +1,14 @@
-export function paintProductsDetail(product){
-    const productElement = document.createElement("div")
-    const date = new Date()
-   
-    productElement.innerHTML = `
+export function paintProductDetail(product){
+    const createdAt = new Date(product.updatedAt);
+    return `
+    <div>
     <h3>${product.name}</h3>
     <p>${product.description}</p>
     <p>${product.price} €</p>
     <p>Operación: ${product.order}</p>
-    <p>Creación: ${date.toLocaleDateString()}</p>
+    <p>Creación: ${createdAt.toLocaleDateString()}</p>
+    </div>
     `
-  
-    return productElement;
   }
   
   export function paintdDeleteButton() {

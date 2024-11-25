@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const searchParams = new URLSearchParams(window.location.search);
     const productId = searchParams.get("id");
 
-    const productDetailContainer = document.querySelector("#product-detail");
+    const productDetailNode = document.querySelector("#productDetail");
 
-    productDetailController(productDetailContainer, productId);
+    productDetailController(productDetailNode, productId);
 })
