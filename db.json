@@ -1,0 +1,62 @@
+{
+  "products": [
+    {
+      "name": "queso",
+      "description": "rico queso de cabra",
+      "price": "70",
+      "order": "venta",
+      "userId": 2,
+      "updatedAt": "2024-11-25T14:54:22.279Z",
+      "id": 3
+    },
+    {
+      "name": "Pall Mall",
+      "description": "coleccion de cartones (10) del antiguo pall mall mentolado previa retiro del producto",
+      "price": "1000",
+      "order": "compra",
+      "userId": 2,
+      "updatedAt": "2024-11-25T15:46:07.235Z",
+      "id": 4
+    },
+    {
+      "name": "Yamaha Fazer",
+      "description": "Muy buen estado. Se pone a 200",
+      "price": "4000",
+      "order": "venta",
+      "userId": 6,
+      "updatedAt": "2024-11-25T15:56:56.608Z",
+      "id": 5
+    },
+    {
+      "name": "Pantalla LCD 27''",
+      "description": "Excelente para juegos. Panorámica",
+      "price": "600",
+      "order": "venta",
+      "userId": 2,
+      "updatedAt": "2024-11-28T12:20:10.380Z",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "username": "test@example.com",
+      "password": "$2b$10$Ce56gvhUt4e2XntzYMG8JOUdDw/XwlzWAAcr8LVrEUZuwYxf.px0O",
+      "id": 1
+    },
+    {
+      "username": "maria@kc.io",
+      "password": "$2b$10$Ce56gvhUt4e2XntzYMG8JOfdiwioCK8rS7JfJlVqXFoxqQgIg/acO",
+      "id": 2
+    },
+    {
+      "username": "maria@kc.com",
+      "password": "$2b$10$Ce56gvhUt4e2XntzYMG8JOfdiwioCK8rS7JfJlVqXFoxqQgIg/acO",
+      "id": 3
+    },
+    {
+      "username": "maria@kc.com",
+      "password": "$2b$10$Ce56gvhUt4e2XntzYMG8JOlt4zepRAt.56V1TVr1V8JSQ3ZG/udUW",
+      "id": 4
+    }
+  ]
+}

@@ -16,27 +16,27 @@ export function signUpController(form){
         errorHtmlNode.innerHTML = '';
 
         try {  
-        // validamos
-        const emailRegExp = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
-        if (!emailRegExp.test(userEmail)) {
-            throw new Error("formato de mail incorrecto")
-        }
+            // validamos
+            const emailRegExp = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+            if (!emailRegExp.test(userEmail)) {
+                throw new Error("formato de mail incorrecto")
+            }
 
-        if (password !== passwordConfirm) {
-            throw new Error("las passwords no sin iguales")
-        }
+            if (password !== passwordConfirm) {
+                throw new Error("las passwords no sin iguales")
+            }
 
        } catch (error) {
-         // gestión de errores
-        errors.push(error)
-        //customErrorEvent("loading-products-error", error, errorHtmlNode)     
-            
-        for (const error of errors) {         
-            const paragraph = document.createElement("h2");
-            paragraph.innerHTML = `${error}`;
-            errorHtmlNode.appendChild(paragraph); 
-         }
-       }
+            // gestión de errores
+            errors.push(error)
+            //customErrorEvent("loading-products-error", error, errorHtmlNode)     
+                
+            for (const error of errors) {         
+                const paragraph = document.createElement("h2");
+                paragraph.innerHTML = `${error}`;
+                errorHtmlNode.appendChild(paragraph); 
+            }
+        }
         // si no hay errores:
         if (errors.length === 0) {
             handleCreateUser(userEmail, password)
@@ -47,10 +47,10 @@ export function signUpController(form){
 async function handleCreateUser(userEmail, password) {
     // consumir sparrest para crear el usuario
     try {
-      await createUser(userEmail, password)
-      alert("Usuario creado")
-      window.location.href = "/";
+        await createUser(userEmail, password)
+        alert("Usuario creado")
+        window.location.href = "/";
     } catch (error) {
-      alert(error.message)
+        alert(error.message)
     }
   }

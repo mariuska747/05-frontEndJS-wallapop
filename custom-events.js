@@ -10,5 +10,5 @@ export function customErrorEvent(event, error, targetHtmlElement){
 }
 
 export function toggleElement(targetHtmlElement, classChange){
-    targetHtmlElement.classList.toggle(!`"${classChange}"`);
+    targetHtmlElement.classList.toggle(classChange);
 }
