@@ -1,6 +1,8 @@
 export async function getCurrentUserInfo() {
     const token = localStorage.getItem('jwt');
-  
+    if (!token) {
+      return null;
+    }
     try {
       const response = await fetch(`http://localhost:8000/auth/me`, {
         headers: {
@@ -11,7 +13,7 @@ export async function getCurrentUserInfo() {
       const user = await response.json();
       
       if (!response.ok) {
-        throw new Error("Usuario no existente");
+        return null;
       }
   
       return user;
