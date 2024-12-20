@@ -1,4 +1,4 @@
-import { signUpController } from "./signup/signup-controller.js";
+import { signUpController } from "./signUp/signup-controller.js";
 import { notificationController } from "./notifications/notifications-controller.js";
 
 document.addEventListener("DOMContentLoaded", ()=>{
